@@ -22,13 +22,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
   background: var(--neutral-light-grayish-magenta);
   font-family: var(--font-leage);
   padding: 50px 0;
 }
 
 main {
+  max-width: 1200px;
+}
+
+main section:nth-child(1) {
   max-width: 350px;
 }
 
@@ -85,6 +88,7 @@ p.reviews {
   background: var(--primary-very-dark-magenta);
   border-radius: 10px;
   padding: 30px 25px;
+  max-width: 350px;
 }
 
 .card__header {
@@ -116,4 +120,253 @@ p.reviews {
   margin-top: 5px;
   font-size: 18px;
   color: var(--primary-soft-pink);
+}
+
+@media screen and (900px >= width >= 768px) {
+  body {
+    padding: 0 20px;
+  }
+
+  main section:nth-child(1) {
+    max-width: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section .main__header {
+    text-align: start;
+  }
+
+  section .main__header .tittle {
+    font-size: 50px;
+  }
+
+  section .main__header .sub__tittle {
+    padding-left: 0;
+    font-size: 15px;
+  }
+
+  section .points {
+    align-items: flex-end;
+  }
+
+  .cards {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .image__desc h1 {
+    font-size: 16px;
+  }
+
+  .image__desc p {
+    font-size: 14px;
+  }
+
+  .card__footer {
+    font-size: 14px;
+  }
+
+  .rated {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 340px;
+  }
+
+  .stars {
+    margin-bottom: 0;
+  }
+
+  p.reviews {
+    font-size: 14px;
+  }
+
+  .rated:nth-child(1) {
+    margin-right: 50px;
+  }
+
+  .rated:nth-child(2) {
+    margin-right: 25px;
+  }
+
+  .card:nth-child(2) {
+    transform: translateY(20px);
+  }
+
+  .card:nth-child(3) {
+    transform: translateY(40px);
+  }
+}
+
+@media screen and (1024px >= width > 900px) {
+  body {
+    padding: 0 20px;
+  }
+
+  main section:nth-child(1) {
+    max-width: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section .main__header {
+    text-align: start;
+  }
+
+  section .main__header .tittle {
+    font-size: 60px;
+  }
+
+  section .main__header .sub__tittle {
+    padding-left: 0;
+    font-size: 20px;
+  }
+
+  section .points {
+    align-items: flex-end;
+  }
+
+  .cards {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .image__desc h1 {
+    font-size: 18px;
+  }
+
+  .image__desc p {
+    font-size: 16px;
+  }
+
+  .card__footer {
+    font-size: 16px;
+  }
+
+  .rated {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 380px;
+  }
+
+  .stars {
+    margin-bottom: 0;
+  }
+
+  p.reviews {
+    font-size: 16px;
+  }
+
+  .rated:nth-child(1) {
+    margin-right: 100px;
+  }
+
+  .rated:nth-child(2) {
+    margin-right: 50px;
+  }
+
+  .card:nth-child(2) {
+    transform: translateY(20px);
+  }
+
+  .card:nth-child(3) {
+    transform: translateY(40px);
+  }
+}
+
+@media screen and (width > 1024px) {
+  body {
+    padding: 0 20px;
+  }
+
+  main section:nth-child(1) {
+    max-width: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section .main__header {
+    text-align: start;
+  }
+
+  section .main__header .tittle {
+    font-size: 60px;
+    padding-right: 70px;
+  }
+
+  section .main__header .sub__tittle {
+    padding-left: 0;
+    font-size: 22px;
+    padding-right: 25px;
+  }
+
+  section .points {
+    align-items: flex-end;
+  }
+
+  .cards {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .image__desc h1 {
+    font-size: 18px;
+  }
+
+  .image__desc p {
+    font-size: 16px;
+  }
+
+  .card__footer {
+    font-size: 16px;
+  }
+
+  .rated {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 450px;
+    padding: 20px;
+  }
+
+  .stars {
+    margin-bottom: 0;
+  }
+
+  p.reviews {
+    font-size: 18px;
+  }
+
+  .rated:nth-child(1) {
+    margin-right: 100px;
+  }
+
+  .rated:nth-child(2) {
+    margin-right: 50px;
+  }
+
+  .card__footer {
+    font-size: 18px;
+  }
+
+  .card {
+    padding: 25px 30px;
+    max-width: 450px;
+  }
+
+  .card:nth-child(2) {
+    transform: translateY(20px);
+  }
+
+  .card:nth-child(3) {
+    transform: translateY(40px);
+  }
 }
